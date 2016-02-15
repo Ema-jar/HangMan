@@ -1,7 +1,5 @@
 // File Name GreetingServer.java
 
-import com.sun.tools.javac.util.ArrayUtils;
-
 import java.net.*;
 import java.io.*;
 import java.util.*;
@@ -81,7 +79,7 @@ public class EchoServer extends Thread {
     private String[] generateWordToGuess(){
 
         String[] couple = new String[2];
-        String filename = "test.properties";
+        String filename = "words_hints.properties";
         Properties prop = new Properties();
         InputStream input = getClass().getClassLoader().getResourceAsStream(filename);
 
